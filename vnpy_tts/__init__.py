@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-import importlib_metadata
+from importlib import metadata
 
 from .gateway import TtsGateway
 
@@ -29,6 +29,6 @@ __all__ = ["TtsGateway"]
 
 
 try:
-    __version__ = importlib_metadata.version("vnpy_tts")
-except importlib_metadata.PackageNotFoundError:
+    __version__ = metadata.version("vnpy_tts")
+except metadata.PackageNotFoundError:
     __version__ = "dev"
