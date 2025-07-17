@@ -30,8 +30,8 @@ from vnpy.trader.event import EVENT_TIMER, EVENT_TICK_UNSUB
 from vnpy.event import Event
 
 from ..api import (
-    MdApi,
-    TdApi,
+    MdApi,  # noqa
+    TdApi,  # noqa
     THOST_FTDC_OAS_Submitted,
     THOST_FTDC_OAS_Accepted,
     THOST_FTDC_OAS_Rejected,
